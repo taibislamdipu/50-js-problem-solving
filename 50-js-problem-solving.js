@@ -34,7 +34,7 @@ console.log(sum);
 // Not clear - #6: Calculate 10!
 
 // #7: Calculate the sum of odd numbers greater than 10 and less than 30
-/*
+
 let sum = 0;
 for (let i = 11; i < 30; i++) {
   if (i % 2 == 1) {
@@ -43,7 +43,6 @@ for (let i = 11; i < 30; i++) {
 }
 
 console.log(sum);
-*/
 
 // #8: Create a function that will convert from Celsius to Fahrenheit
 function celsiusToFahrenheit(celsius) {
@@ -70,7 +69,7 @@ function fahrenheitToCelsius(fahrenheit) {
 console.log(fahrenheitToCelsius(36));
 
 // #10: Calculate the sum of numbers in an array of numbers
-/*
+
 const numbers = [1, 3, 2, 4, -5, 5];
 
 // solution 1
@@ -84,10 +83,9 @@ console.log(sum);
 // solution 2
 const sum = numbers.reduce((sum, curr) => sum + curr, 0);
 console.log(sum);
-*/
 
 // #11: Calculate the average of the numbers in an array of numbers
-/*
+
 const numbers = [1, 3, 9, 15, 90];
 
 const total = numbers?.length;
@@ -95,10 +93,9 @@ const sum = numbers.reduce((sum, i) => sum + i, 0);
 const average = sum / total;
 
 console.log(average);
-*/
 
 // #12: Create a function that receives an array of numbers and returns an array containing only the positive numbers
-/*
+
 const onlyPositiveNumbers = [];
 
 function positiveNumber(num) {
@@ -112,4 +109,3 @@ function positiveNumber(num) {
 const numbers = [-5, 10, -3, 12, -9, 5, 90, 0, 1];
 positiveNumber(numbers);
 console.log(onlyPositiveNumbers);
-*/
