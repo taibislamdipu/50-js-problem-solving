@@ -120,6 +120,22 @@ console.log(Math.max(...numbers));
 
 // #16: Create a function that will return a Boolean specifying if a number is prime
 
+// solution 1
+function isPrime(number) {
+  if (number <= 0) {
+    return false;
+  }
+  for (var i = 2; i < number; i++) {
+    if (number % i === 0) {
+      return false;
+    }
+  }
+  return true;
+}
+
+console.log(isPrime(1));
+
+// Solution 2
 function isPrime(n) {
   if (n < 2) {
     return false;
@@ -175,3 +191,33 @@ for (let i = 0; i < originalArray.length; i++) {
 }
 
 Hints: console.log(newArray); //expected output: [11, 6, 12, 7, 13, 8, 14, 9, 5, 10]
+
+// #22: Reverse an array
+
+const myArray = [1, 2, 3, 4, 5];
+
+function reverseArray(arr) {
+  return arr.reverse();
+}
+
+console.log(reverseArray(myArray));
+
+// JavaScript function that takes an array of numbers as input and returns the sum of the squares of all even numbers in the array:
+
+// test data:
+// const arr = [1, 2, 3, 4, 5];
+// console.log(sumOfSquares(arr));
+// expected output: 20
+
+function sumOfSquares(arr) {
+  let sum = 0;
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] % 2 == 0) {
+      sum = sum + arr[i] ** 2;
+    }
+  }
+  return sum;
+}
+
+const arr = [1, 2, 3, 4, 5];
+console.log(sumOfSquares(arr));
