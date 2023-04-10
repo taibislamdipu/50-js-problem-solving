@@ -1,19 +1,5 @@
 // Not clear - #6: Calculate 10!
 
-// solution 2
-const sum = numbers.reduce((sum, curr) => sum + curr, 0);
-console.log(sum);
-
-// #11: Calculate the average of the numbers in an array of numbers
-
-const numbers = [1, 3, 9, 15, 90];
-
-const total = numbers?.length;
-const sum = numbers.reduce((sum, i) => sum + i, 0);
-const average = sum / total;
-
-console.log(average);
-
 // #12: Create a function that receives an array of numbers and returns an array containing only the positive numbers
 
 const onlyPositiveNumbers = [];
