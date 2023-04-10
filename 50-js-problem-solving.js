@@ -1,84 +1,4 @@
-// #1: Print numbers from 1 to 10
-for (i = 1; i <= 10; i++) {
-  console.log(i);
-}
-
-// #2: Print the odd numbers less than 100
-for (let i = 0; i < 100; i++) {
-  if (i % 2 == 1) {
-    console.log(i);
-  }
-}
-
-// #3: Print the multiplication table with 7
-for (let i = 1; i <= 10; i++) {
-  console.log(`7 x ${i} = ${7 * i}`);
-}
-
-// #4: Print all the multiplication tables with numbers from 1 to 10
-for (let i = 1; i <= 10; i++) {
-  console.log(`Multiplication tables of ${i}`);
-  for (let j = 1; j <= 10; j++) {
-    console.log(`${i} x ${j} = ${i * j}`);
-  }
-}
-
-// #5: Calculate the sum of numbers from 1 to 10
-let sum = 0;
-for (let i = 1; i <= 10; i++) {
-  sum += i;
-}
-
-console.log(sum);
-
 // Not clear - #6: Calculate 10!
-
-// #7: Calculate the sum of odd numbers greater than 10 and less than 30
-
-let sum = 0;
-for (let i = 11; i < 30; i++) {
-  if (i % 2 == 1) {
-    sum += i;
-  }
-}
-
-console.log(sum);
-
-// #8: Create a function that will convert from Celsius to Fahrenheit
-function celsiusToFahrenheit(celsius) {
-  if (typeof celsius !== "number") {
-    return "Error: Please input a valid number for the temperature in Celsius.";
-  } else {
-    var fahrenheit = celsius * 1.8 + 32;
-    return fahrenheit;
-  }
-}
-
-console.log(celsiusToFahrenheit(10));
-
-// #9: Create a function that will convert from Fahrenheit to Celsius
-function fahrenheitToCelsius(fahrenheit) {
-  if (typeof fahrenheit !== "number") {
-    return "Error: Please input a valid number for the temperature in fahrenheit.";
-  } else {
-    const celsius = (fahrenheit - 32) * (5 / 9);
-    return celsius;
-  }
-}
-
-console.log(fahrenheitToCelsius(36));
-
-// #10: Calculate the sum of numbers in an array of numbers
-
-const numbers = [1, 3, 2, 4, -5, 5];
-
-// solution 1
-let sum = 0;
-for (let i = 0; i < numbers.length; i++) {
-  sum += numbers[i];
-}
-
-console.log(sum);
 
 // solution 2
 const sum = numbers.reduce((sum, curr) => sum + curr, 0);
@@ -221,3 +141,13 @@ function sumOfSquares(arr) {
 
 const arr = [1, 2, 3, 4, 5];
 console.log(sumOfSquares(arr));
+
+// Here is the three numbers: 5, 10, 15. Find the largest number out of three numbers using Conditional Statement.
+const numbers = [5, 10, 20, 15];
+let max = 0;
+for (let i = 0; i < numbers.length; i++) {
+  if (numbers[i] > max) {
+    max = numbers[i];
+  }
+}
+console.log(max);
