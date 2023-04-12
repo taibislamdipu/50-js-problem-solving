@@ -1,60 +1,6 @@
 // Not clear - #6: Calculate 10!
 
-// #12: Create a function that receives an array of numbers and returns an array containing only the positive numbers
-
-const onlyPositiveNumbers = [];
-
-function positiveNumber(num) {
-  for (let i = 0; i < num.length; i++) {
-    if (num[i] > -1) {
-      onlyPositiveNumbers.push(num[i]);
-    }
-  }
-}
-
-const numbers = [-5, 10, -3, 12, -9, 5, 90, 0, 1];
-positiveNumber(numbers);
-console.log(onlyPositiveNumbers);
-
-// #13: Find the maximum number in an array of numbers
-
-const numbers = [1, 2, 3, 10, 4, 5, -20];
-
-console.log(Math.max(...numbers));
-
 // #14: Print the first 10 Fibonacci numbers without recursion
-
-// #16: Create a function that will return a Boolean specifying if a number is prime
-
-// solution 1
-function isPrime(number) {
-  if (number <= 0) {
-    return false;
-  }
-  for (var i = 2; i < number; i++) {
-    if (number % i === 0) {
-      return false;
-    }
-  }
-  return true;
-}
-
-console.log(isPrime(1));
-
-// Solution 2
-function isPrime(n) {
-  if (n < 2) {
-    return false;
-  }
-  for (let i = 2; i <= Math.sqrt(n); i++) {
-    if (n % i === 0) {
-      return false;
-    }
-  }
-  return true;
-}
-
-console.log(isPrime(11));
 
 // #17: Calculate the sum of digits of a positive integer number
 let intDigits = [];
