@@ -11,19 +11,22 @@ const newArray = originalArray.map((value) => {
   }
 });
 
-const newArray = originalArray.map((value) => (value < 5 ? value + 10 : value));
-
-Hints: console.log(newArray); //expected output: [11, 6, 12, 7, 13, 8, 14, 9, 5, 10]
-
 // solution 2
-const newArray = [];
+const newArray2 = [];
 
 for (let i = 0; i < originalArray.length; i++) {
   if (originalArray[i] < 5) {
-    newArray.push(originalArray[i] + 10);
+    newArray2.push(originalArray[i] + 10);
   } else {
-    newArray.push(originalArray[i]);
+    newArray2.push(originalArray[i]);
   }
 }
 
-Hints: console.log(newArray); //expected output: [11, 6, 12, 7, 13, 8, 14, 9, 5, 10]
+Hints: console.log(newArray2); //expected output: [11, 6, 12, 7, 13, 8, 14, 9, 5, 10]
+
+// solution 3
+const newArray3 = originalArray.map((value) =>
+  value < 5 ? value + 10 : value
+);
+
+Hints: console.log(newArray3); //expected output: [11, 6, 12, 7, 13, 8, 14, 9, 5, 10]
